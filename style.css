@@ -1,0 +1,316 @@
+/* -----------------------------------
+      Gallery Section
+--------------------------------------*/
+.portfolio-section {
+    padding: 50px 0;
+    background-color: #000;
+  }
+  .portfolio-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .portfolio-menu {
+    text-align: center;
+  }
+  .control {
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #343a40;
+    border-radius: 3px;
+    margin: 5px;
+    cursor: pointer;
+    -webkit-transition: all 05s ease;
+    -moz-transition: all 05s ease;
+    -ms-transition: all 05s ease;
+    -o-transition: all 05s ease;
+    transition: all 0.5s ease;
+  }
+  .control:hover {
+    background: #343a40;
+  }
+  .mixitup-control-active {
+    color: #fff;
+    background: #343a40;
+  }
+  .fancybox-container button:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  .portfolio-item {
+    padding-top: 30px;
+  }
+  .pd {
+    padding: 0;
+    padding: 10px;
+  }
+  .pd img {
+    height: 180px;
+    transition: all 0.5s;
+  }
+  .portfolio-overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    visibility: hidden;
+    transition: all 0.5s;
+    transform: scale(0);
+  }
+  .portfolio-overlay p,
+  .portfolio-overlay a {
+    position: relative;
+    z-index: 4;
+  }
+  .portfolio-overlay::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 0;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    transition: 50ms height ease 150ms;
+    z-index: 3;
+  }
+  .portfolio-overlay::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 0;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    transition: 100ms width ease 200ms;
+    z-index: 3;
+  }
+  .portfolio-item:hover .portfolio-overlay::before {
+    width: 80%;
+    height: 80%;
+    border-top: 1px solid #50977f;
+    border-right: 1px solid #50977f;
+    transition: width 0.1s ease 0.3s, height 0.1s ease 0.5s;
+  }
+  .portfolio-item:hover .portfolio-overlay::after {
+    width: 80%;
+    height: 80%;
+    border-bottom: 1px solid #50977f;
+    border-left: 1px solid #50977f;
+    transition: width 0.1s ease 0.6s, height 0.1s ease 0.7s;
+  }
+  .portfolio-item li:hover .portfolio-overlay {
+    visibility: visible;
+    transform: scale(1);
+  }
+  .portfolio-overlay .category {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+  }
+  .portfolio-overlay .magnify-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background: #50977f;
+    margin: 0 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.25s;
+  }
+  .portfolio-overlay .magnify-icon:hover {
+    background: #000;
+  }
+  .portfolio-overlay .magnify-icon p span i {
+    font-size: 15px;
+    color: #fff;
+    line-height: 40px;
+    cursor: pointer;
+  }
+
+  
+
+
+:root{
+    --bleue_nuit :#252636;
+    --Jaune : #fcb900;
+    --blanc : #ffffff;
+    --style_nav : 'PT Sans Narrow'
+}
+
+/*
+    ######### Header One
+*/
+.header-one{
+    background-color: var(--bleue_nuit) !important;
+    color: var(--blanc);
+    font-family: 'PT Sans', 'sans-sherif';
+}
+
+/*
+    ######### Header Two
+*/
+.navbar{
+    background-color: var(--Jaune) !important;
+}
+.navbar-brand img{
+    margin: 0px 20px;
+    width: 50px;
+    height: 50px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* 
+    ########### Carousel
+*/
+.banner{
+    min-height: 90vh;
+}
+
+
+
+
+
+/* Vertical Slider 100% Height */
+.vertical .carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  /* Vertical Slider Animation */
+  .vertical .carousel-item-next.carousel-item-left,
+  .vertical .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .vertical .carousel-item-next,
+  .vertical .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100% 0);
+  }
+  
+  .vertical .carousel-item-prev,
+  .vertical .active.carousel-item-left {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  
+  /* Vertical Ccarousel Indicators on Right */
+  .carousel-indicators {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    right: 10px;
+    left: auto;
+    width: auto;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  
+  .carousel-indicators > li {
+    display: block;
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    border: 0;
+    background-color: var(--blanc);
+    margin: 5px;
+  }
+  
+  .carousel-indicators li.active {
+    margin-bottom: 5px;
+    background: var(--bleue_nuit);
+  }
+  
+  /* Vertical Carousel Controls on Right */
+  .carousel.vertical .carousel-control-prev,
+  .carousel.vertical .carousel-control-next {
+    left: auto;
+    right: 13.5px;
+    width: 50px;
+  }
+  .carousel.vertical .carousel-control-prev.up {
+    top: 0;
+    bottom: 50%;
+  }
+  .carousel.vertical .carousel-control-next.down {
+    top: 50%;
+    bottom: 0;
+  }
+  .carousel.vertical .carousel-control-prev.up i,
+  .carousel.vertical .carousel-control-next.down i {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    font-size: 2em;
+  }
+  .carousel.vertical .carousel-control-prev.up i {
+    left: 50%;
+    margin-left: -10px;
+    top: 50%;
+    margin-top: -10px;
+  }
+  .carousel.vertical .carousel-control-next.down i {
+    left: 50%;
+    margin-left: -10px;
+    top: 50%;
+    margin-top: -10px;
+  }
+  
+  /* Vertical Carousel Captions Size */
+  .carousel-caption {
+    max-width: 100%;
+    width: 100%;
+    height: 85%;
+    left: 0;
+  }
+
+  
+
+
+
+
+/* 
+    ######### Background Attachement
+*/
+.background-attachement{
+    background-image: linear-gradient(rgba(43, 43, 46, 0.52), rgba(43, 43, 46, 0.52)), url('https://images.pexels.com/photos/534220/pexels-photo-534220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 50vh;
+}
+
+
+
+/* 
+    ######### About
+*/
+.accordion-button{
+    background-color: var(--bleue_nuit) !important;
+    color:var(--blanc);
+    font-weight: bold;
+}
