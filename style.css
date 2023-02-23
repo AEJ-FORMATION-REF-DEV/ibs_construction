@@ -297,5 +297,9 @@ color: #fcb900 !important;
     min-height: 55vh;
 }
 
-
+@media (max-width:764px) {
+  .background-attachement{
+    display: none;
+  }
+}
 
