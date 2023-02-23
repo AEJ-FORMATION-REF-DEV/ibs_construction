@@ -15,7 +15,7 @@
 }
 .top i{
   color:#ffffff;
-  font-size: 21px;
+  font-size: 28px;
 }
 /* -----------------------------------
       Navbar Section
@@ -71,7 +71,7 @@ color: #fcb900 !important;
 }
 .banner p{
   font-size: 18px;
-  color: #000000d0;
+  color: #fcfcff83;
   font-weight: 600;
 }
 .banner .btn-banner{
