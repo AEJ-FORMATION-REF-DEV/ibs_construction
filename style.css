@@ -108,6 +108,12 @@ color: #fcb900 !important;
   height: 200px;
 
 }
+.about .images{
+  display: none;
+}
+
+
+
 /* -----------------------------------
       Metier Section
 --------------------------------------*/
@@ -325,6 +331,12 @@ color: #fcb900 !important;
 
 @media (max-width:764px) {
   .background-attachement{
+    display: none;
+  }
+  .about .images{
+    display: block;
+  }
+  .about .content .row{
     display: none;
   }
   
