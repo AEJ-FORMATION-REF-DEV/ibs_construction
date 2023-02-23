@@ -99,6 +99,15 @@ color: #fcb900 !important;
   font-weight: 700;
 }
 
+.about .milieu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+
+}
 /* -----------------------------------
       Metier Section
 --------------------------------------*/
