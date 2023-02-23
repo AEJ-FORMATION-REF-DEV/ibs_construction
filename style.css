@@ -1,5 +1,124 @@
+
+:root{
+  --bleue_nuit :#252636;
+  --Jaune : #fcb900;
+  --blanc : #ffffff;
+  --style_nav : 'PT Sans Narrow'
+}
+
+
 /* -----------------------------------
-      Gallery Section
+      Navbar Section
+--------------------------------------*/
+.navbar-toggler{
+  background-color: #fff !important;
+}
+.header-one img{
+  height: 80px;
+  width: 200px;
+
+}
+.navbar{
+  background-color: var(--bleue_nuit) !important;
+}
+.navbar-brand img{
+  margin: 0px 20px;
+  width: 50px;
+  height: 50px;
+}
+.nav-item .nav-link{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff !important;
+}
+.nav-link:hover{
+  color: #fcb900 !important;
+  transition: all 0.5s;
+}
+.nav-item .active{
+color: #fcb900 !important;
+}
+
+/* -----------------------------------
+      Banner Section
+--------------------------------------*/
+.banner{
+  min-height: 95vh;
+  background: linear-gradient(#00000079, #00000079), url('https://images.unsplash.com/photo-1612935089040-89195ef54677?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner .title{
+  color: #ffffff;
+   font-weight: bold;
+   font-size: 36px;
+   text-transform: uppercase;
+   font-family: 'news-gothic-bold-regular', sans-serif;
+  }
+.banner .title span{
+  color: #fcb900;
+}
+.banner p{
+  font-size: 18px;
+  color: #000000d0;
+  font-weight: 600;
+}
+.banner .btn-banner{
+    padding: 10px;
+    border: 2px solid #fcb900;
+    width: 150px;
+    background-color: #fcb900;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+/* -----------------------------------
+      About Section
+--------------------------------------*/
+.accordion-button{
+  background-color: var(--bleue_nuit) !important;
+  color:var(--blanc);
+  font-weight: bold;
+}
+
+.about h2{
+  text-transform: uppercase;
+  color: var(--bleue_nuit);
+  font-weight: 700;
+}
+
+/* -----------------------------------
+      Metier Section
+--------------------------------------*/
+.metiers .content{
+  background-color: #fcfcff83;
+}
+.metiers .content:hover{
+  transition: .5s;
+  --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb),.15)!important;
+}
+
+.metiers .content i{
+  font-size: 28px;
+  color: var(--bleue_nuit);
+  
+}
+.metiers .content h4{
+  font-family: 'Poppins', sans-serif;
+  color: var(--bleue_nuit);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+
+
+/* -----------------------------------
+      Portfolio Section
 --------------------------------------*/
 .portfolio-section {
     padding: 50px 0;
@@ -138,188 +257,6 @@
   
 
 
-:root{
-    --bleue_nuit :#252636;
-    --Jaune : #fcb900;
-    --blanc : #ffffff;
-    --style_nav : 'PT Sans Narrow'
-}
-
-/*
-    ######### Header One
-*/
-
-.header-one img{
-    height: 80px;
-    width: 200px;
-
-}
-
-/*
-    ######### Header Two
-*/
-.navbar{
-    background-color: var(--bleue_nuit) !important;
-}
-.navbar-brand img{
-    margin: 0px 20px;
-    width: 50px;
-    height: 50px;
-}
-.nav-item .nav-link{
-    font-size: 16px;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff !important;
-}
-.navbar-nav .active{
-  color: #fcb900;
-}
-
-/* 
-    ########### Carousel
-*/
-.banner{
-  min-height: 95vh;
-  background: linear-gradient(#00000052, #00000052), url('https://images.unsplash.com/photo-1612935089040-89195ef54677?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.banner .title{
-  color: #ffffff;
-   font-weight: bold;
-   font-size: 38px;
-   text-transform: uppercase;
-   font-family: 'news-gothic-bold-regular', sans-serif;
-  }
-.banner .title span{
-  color: #fcb900;
-}
-.banner p{
-  font-size: 18px;
-  color: #000;
-  font-weight: 600;
-}
-.banner .btn-banner{
-    padding: 10px;
-    border: 2px solid #fcb900;
-    width: 150px;
-    background-color: #fcb900;
-    font-weight: 600;
-    font-size: 18px;
-
-}
-
-
-
-
-/* Vertical Slider 100% Height */
-.vertical .carousel-item {
-    height: 100vh;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  
-  /* Vertical Slider Animation */
-  .vertical .carousel-item-next.carousel-item-left,
-  .vertical .carousel-item-prev.carousel-item-right {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  
-  .vertical .carousel-item-next,
-  .vertical .active.carousel-item-right {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100% 0);
-  }
-  
-  .vertical .carousel-item-prev,
-  .vertical .active.carousel-item-left {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-  
-  /* Vertical Ccarousel Indicators on Right */
-  .carousel-indicators {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 20px;
-    right: 10px;
-    left: auto;
-    width: auto;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
-  
-  .carousel-indicators > li {
-    display: block;
-    border-radius: 12px;
-    width: 12px;
-    height: 12px;
-    border: 0;
-    background-color: var(--blanc);
-    margin: 5px;
-  }
-  
-  .carousel-indicators li.active {
-    margin-bottom: 5px;
-    background: var(--bleue_nuit);
-  }
-  
-  /* Vertical Carousel Controls on Right */
-  .carousel.vertical .carousel-control-prev,
-  .carousel.vertical .carousel-control-next {
-    left: auto;
-    right: 13.5px;
-    width: 50px;
-  }
-  .carousel.vertical .carousel-control-prev.up {
-    top: 0;
-    bottom: 50%;
-  }
-  .carousel.vertical .carousel-control-next.down {
-    top: 50%;
-    bottom: 0;
-  }
-  .carousel.vertical .carousel-control-prev.up i,
-  .carousel.vertical .carousel-control-next.down i {
-    position: absolute;
-    top: 50%;
-    z-index: 5;
-    display: inline-block;
-    font-size: 2em;
-  }
-  .carousel.vertical .carousel-control-prev.up i {
-    left: 50%;
-    margin-left: -10px;
-    top: 50%;
-    margin-top: -10px;
-  }
-  .carousel.vertical .carousel-control-next.down i {
-    left: 50%;
-    margin-left: -10px;
-    top: 50%;
-    margin-top: -10px;
-  }
-  
-  /* Vertical Carousel Captions Size */
-  .carousel-caption {
-    max-width: 100%;
-    width: 100%;
-    height: 85%;
-    left: 0;
-  }
-
-  
 
 
 
@@ -336,11 +273,3 @@
 
 
 
-/* 
-    ######### About
-*/
-.accordion-button{
-    background-color: var(--bleue_nuit) !important;
-    color:var(--blanc);
-    font-weight: bold;
-}
