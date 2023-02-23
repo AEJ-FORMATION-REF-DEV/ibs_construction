@@ -347,7 +347,7 @@ color: #fcb900 !important;
   .navbar img{
     display: block;
   }
-  .header-one{
+  header .header-one{
     display: none;
   }
   .about .images{
@@ -358,6 +358,9 @@ color: #fcb900 !important;
   }
   .contacts .infos{
     width: 100%;
+  }
+  .contacts .col-lg-6:first-child{
+    margin-bottom: 50px;
   }
 }
 
