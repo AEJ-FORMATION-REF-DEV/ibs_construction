@@ -372,3 +372,9 @@ color: #fcb900 !important;
   
 }
 
+@media (max-width:575px) {
+  .partenaires{
+    width: 100%;
+  }
+}
+
