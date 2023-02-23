@@ -6,7 +6,17 @@
   --style_nav : 'PT Sans Narrow'
 }
 
-
+.top{
+  background-color: var(--bleue_nuit);
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border-radius: 5px;
+}
+.top i{
+  color:#ffffff;
+  font-size: 21px;
+}
 /* -----------------------------------
       Navbar Section
 --------------------------------------*/
