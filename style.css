@@ -77,13 +77,15 @@ color: #fcb900 !important;
 .banner .btn-banner{
     padding: 10px;
     border: 2px solid #fcb900;
-    
+    color: #fff;
     background-color: #fcb900;
     font-weight: 600;
     font-size: 18px;
 
 }
-
+.banner .btn-banner i{
+  color: var(--bleue_nuit) !important;
+}
 /* -----------------------------------
       About Section
 --------------------------------------*/
@@ -298,6 +300,7 @@ color: #fcb900 !important;
   display: grid;
   place-items: center;
   min-height: 40vh;
+  width: 100%;
 }
 .partenaires img{
   margin-top: 50px;
@@ -339,18 +342,22 @@ color: #fcb900 !important;
   .header-one{
     display: none;
   }
-}
-
-@media (max-width:764px) {
-  .background-attachement{
-    display: none;
-  }
   .about .images{
     display: block;
   }
   .about .content .row{
     display: none;
   }
+  .contacts .infos{
+    width: 100%;
+  }
+}
+
+@media (max-width:764px) {
+  .background-attachement{
+    display: none;
+  }
+  
   
 }
 
