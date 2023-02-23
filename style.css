@@ -300,6 +300,10 @@ color: #fcb900 !important;
     line-height: 40px;
     cursor: pointer;
   }
+.mix img{
+  width: 100%;
+}
+
 
 /* -----------------------------------
       Partenaires Section
