@@ -87,6 +87,11 @@ color: #fcb900 !important;
 /* -----------------------------------
       About Section
 --------------------------------------*/
+.about{
+  display: grid;
+  place-items: center;
+  min-height: 90vh;
+}
 .accordion-button{
   background-color: var(--bleue_nuit) !important;
   color:var(--blanc);
@@ -111,7 +116,14 @@ color: #fcb900 !important;
 .about .images{
   display: none;
 }
-
+.about .card{
+  background-color: none;
+  border-radius: none;
+}
+.about .card img{
+  height: 200px;
+  border-radius: 5px;
+}
 
 
 /* -----------------------------------
