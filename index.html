@@ -142,13 +142,13 @@
                             <div class="statistique d-flex mt-3">
                                 <div class="one ">
                                     <div class="text-center">
-                                        <p>+<span id="immeuble">5</span></p> 
+                                        <p>+<span id="immeuble"></span></p> 
                                         <p>Immeubles construits</p>
                                     </div>
                                 </div>
                                 <div class="two">
                                     <div class="text-center">
-                                        <p>+<span id="villa">15</span></p> 
+                                        <p>+<span id="villa"></span></p> 
                                         <p>Villa construits</p>
                                     </div>
                                 </div>
@@ -311,8 +311,8 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-lg-12 text-center">
-                  <h2>Nos Réalisations</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing icia!</p>
+                  <h2 class="text-uppercase titre">Nos Réalisations</h2>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing icia!</p>
                 </div>
               </div>
               <div class="portfolio-menu mt-2 mb-4">
@@ -542,7 +542,7 @@
                 </li>
               </ul>
               <div class="row">
-                  <a class="text-white text-center text-decoration-none "href="#">Consulter toutes nos réalisations</a>
+                  <a class="text-white text-center text-decoration-none "href="#">Consulter toutes nos réalisations <i class="bi bi-arrow-right-short"></i></a>
               </div>
             </div>
         </section>
@@ -581,17 +581,67 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="content">
+                        <div class="content text-white">
                             <div class="infos p-5 w100">
                                 <h6>Contacts infos</h6>
+                                <div class="phone ">
+                                  <p>Lieu</p>
+                                    <div class="content d-flex">
+                                        <div class="icon d-flex justify-content-center align-items-center"><i class="bi bi-telephone"></i></div>
+                                        <div class="text">
+                                          Abidjan, à 100m de la pharmacie 7ème tranche 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone ">
+                                  <p>Telephone</p>
+                                    <div class="content d-flex">
+                                        <div class="icon d-flex justify-content-center align-items-center"><i class="bi bi-telephone"></i></div>
+                                        <div class="text">
+                                          [ +225 ] 0101010101 / 0202020202
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="email ">
+                                  <p>Email</p>
+                                  <div class="content d-flex">
+                                      <div class="icon d-flex justify-content-center align-items-center"><i class="bi bi-telephone"></i></div>
+                                      <div class="text">
+                                        [ +225 ] 0101010101 / 0202020202
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="socials ">
+                                  <p>Liens réseaux sociaux</p>
+                                  <div class="content d-flex">
+                                      <div class="fb"><i class="bi bi-facebook"></i></div>
+                                      <div class="instagram"><i class="bi bi-instagram"></i></div>
+                                  </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                    <div class="col-lg-6">
                         <div class="content">
                             <div class="google-maps">
-                              <h6>Coordonnée Google Maps</h6>
-                              <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d127119.26222333536!2d-4.0645722!3d5.343924!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sci!4v1677160357128!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <h6>Contactez nous / Demander un devis</h6>
+                              <form>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Motif</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="" class="form-label">Message</label>
+                                  <textarea class="form-control" id=""></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary">Envoyer</button>
+                              </form>
+                              <!-- <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d127119.26222333536!2d-4.0645722!3d5.343924!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sci!4v1677160357128!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                             </div>
                         </div>
                    </div>
@@ -603,13 +653,40 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
-                        Mention Légale
+                        <h4>Mention Légale</h4>
+                        <p><a href="">Lorem ipsum dolor</a></p>
+                        <p><a href="">sit amet consectetur</a></p>
+                        <p><a href="">adipisicing elit</a></p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h4>Lien de navigation</h4>
+                        <ul>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#about">A Propos</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#metiers">Nos Metiers</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#realisations">Réalisations</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#partenaires">Partenaires</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#conseils">Conseils</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#contacts">Contacts</a>
+                          </li>
+                        </ul>
                     </div>
                     <div class="col-lg-4">
-                        Lien de navigation
-                    </div>
-                    <div class="col-lg-4">
-                        Lien
+                        <h4>Lien</h4>
                     </div>
 
                 </div>
@@ -693,22 +770,43 @@
     </script>
 
     <script>
-      function numCounter(tagId,maxCount,speed){
-    var initialNumber = 0;
-    function counter(){
-        document.getElementById(tagId).innerHTML = initialNumber;
-        ++initialNumber;
-    }
-    var counterDelay = setInterval(counter,speed);
-    function totalTime(){
-        clearInterval(counterDelay);
-    }
-    var totalPeriod = speed * (maxCount);  
-    setTimeout(totalTime, totalPeriod);
-}
+     
+	$.fn.jQuerySimpleCounter = function( options ) {
+	    var settings = $.extend({
+	        start:  0,
+	        end:    100,
+	        easing: 'swing',
+	        duration: 400,
+	        complete: ''
+	    }, options );
 
-numCounter("immeuble",44,100);
-numCounter("villa",12,400);
+	    var thisElement = $(this);
+
+	    $({count: settings.start}).animate({count: settings.end}, {
+			duration: settings.duration,
+			easing: settings.easing,
+			step: function() {
+				var mathCount = Math.ceil(this.count);
+				thisElement.text(mathCount);
+			},
+			complete: settings.complete
+		});
+	};
+
+
+$('#immeuble').jQuerySimpleCounter({end: 12,duration: 3000});
+$('#villa').jQuerySimpleCounter({end: 30,duration: 3000});
+
+
+
+
+  	/* AUTHOR LINK */
+     $('.about-me-img').hover(function(){
+            $('.authorWindowWrapper').stop().fadeIn('fast').find('p').addClass('trans');
+        }, function(){
+            $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
+        });
+  
     </script>
 
 

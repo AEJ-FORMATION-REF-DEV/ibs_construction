@@ -1,10 +1,13 @@
-
 :root{
   --bleue_nuit :#252636;
   --Jaune : #fcb900;
   --blanc : #ffffff;
   --style_nav : 'PT Sans Narrow'
 }
+html{
+  scroll-behavior: smooth;
+}
+
 /* -----------------------------------
       Global
 --------------------------------------*/
@@ -22,7 +25,13 @@
 .titre{
   color: #fcb900 !important;
 }
-
+ul li{
+  list-style: none;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
 
 
 
@@ -191,7 +200,7 @@ color: #fcb900 !important;
 
 .metiers .content i{
   font-size: 28px;
-  color: var(--bleue_nuit);
+  color: var(--Jaune);
   
 }
 .metiers .content h4{
@@ -372,6 +381,21 @@ color: #fcb900 !important;
 }
 
 
+/* -----------------------------------
+      Footer Section
+--------------------------------------*/
+.footer{
+  background-color: #000;
+  padding: 20px;
+  color: #fff;
+}
+.footer h4{
+  text-transform: uppercase;
+}
+.footer ul li{
+  margin: 20px auto;
+}
+
 
 /* 
     ######### Background Attachement
@@ -403,6 +427,10 @@ color: #fcb900 !important;
   .contacts .col-lg-6:first-child{
     margin-bottom: 50px;
   }
+  .footer{
+    text-align: center;
+  }
+  
 }
 
 @media (max-width:764px) {
