@@ -106,7 +106,7 @@
 
         <section class="about mt-5" id="about">
             <div class="container">
-                <h2 class="text-uppercase mb-5">A Propos</h2>
+                <h2 class="mb-3 text-uppercase titre">A Propos</h2>
 
                 <div class="row">
                     <div class="col-lg-6 d-flex align-items-center mb-5">
@@ -121,7 +121,7 @@
                                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, non? Nemo similique id aut aperiam, nobis sapiente, consequuntur ipsa harum, perferendis porro corporis minus voluptatum reiciendis alias? Reiciendis, tenetur dolores.</p>
-                                        <a href="#"><i class="bi bi-cloud-arrow-down"></i> Brochure</a>
+                                        <a class="btn p-1" href="#"><i class="bi bi-cloud-arrow-down"></i> Brochure</a>
                                     </div>
                                   </div>
                                 </div>
@@ -140,15 +140,15 @@
                                
                             </div>
                             <div class="statistique d-flex mt-3">
-                                <div class="one">
+                                <div class="one ">
                                     <div class="text-center">
-                                        <p><span>+5</span></p> 
-                                        <p>Projets immeuble construit</p>
+                                        <p>+<span id="immeuble">5</span></p> 
+                                        <p>Immeubles construits</p>
                                     </div>
                                 </div>
                                 <div class="two">
                                     <div class="text-center">
-                                        <p><span>+15</span></p> 
+                                        <p>+<span id="villa">15</span></p> 
                                         <p>Villa construits</p>
                                     </div>
                                 </div>
@@ -203,7 +203,7 @@
 
         <section class="metiers mt-5" id="metiers">
             <div class="container">
-                <h2 class="mb-5 mt-3 text-uppercase">Nos Metiers</h2>
+                <h2 class="mb-3 text-uppercase titre">Nos Metiers</h2>
                 <div class="row">
                     <div class="col-lg-4 mb-3 d-flex justify-content-center align-items-center">
                         <div class="content shadow p-5 mb-5 bg-body-tertiary rounded">
@@ -549,14 +549,13 @@
 
         <section class="partenaires mt-5" id="partenaires">
             <div class="container">
-                <h4 class="mb-3 text-uppercase">Nos Partenaires</h4>
-                <!-- <div class="owl-carousel owl-theme">
+                <h4 class="mb-3 text-uppercase titre">Nos Partenaires</h4>
+                <div class="owl-carousel owl-theme">
                   <div> <img src="assets/images/partenaires/cico.jpg" alt=""> </div>
                   <div> <img src="assets/images/partenaires/coris.jpg" alt=""> </div>
                   <div> <img src="assets/images/partenaires/noah.jpg" alt=""> </div>
                   <div> <img src="assets/images/partenaires/satom.jpg" alt=""> </div>
-                  <div> <img src="assets/images/partenaires/sud_construction.jpg" alt=""> </div> 
-                </div> -->
+                </div>
             </div>
         </section>
 
@@ -566,7 +565,7 @@
 
         <section class="conseils mt-5" id="conseils">
             <div class="container">
-                <h4 class="mb-3 text-uppercase">Conseils</h4>
+                <h4 class="mb-3 text-uppercase titre">Conseils</h4>
                 <div class="owl-carousel owl-theme">
                     <div> Conseils </div>
                     <div> Conseils </div>
@@ -622,6 +621,8 @@
 
 
     </div>
+
+    
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -690,5 +691,28 @@
     }
 })
     </script>
+
+    <script>
+      function numCounter(tagId,maxCount,speed){
+    var initialNumber = 0;
+    function counter(){
+        document.getElementById(tagId).innerHTML = initialNumber;
+        ++initialNumber;
+    }
+    var counterDelay = setInterval(counter,speed);
+    function totalTime(){
+        clearInterval(counterDelay);
+    }
+    var totalPeriod = speed * (maxCount);  
+    setTimeout(totalTime, totalPeriod);
+}
+
+numCounter("immeuble",44,100);
+numCounter("villa",12,400);
+    </script>
+
+
+
+
 </body>
 </html>

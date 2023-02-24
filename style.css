@@ -5,7 +5,9 @@
   --blanc : #ffffff;
   --style_nav : 'PT Sans Narrow'
 }
-
+/* -----------------------------------
+      Global
+--------------------------------------*/
 .top{
   background-color: var(--bleue_nuit);
   height: 50px;
@@ -17,6 +19,13 @@
   color:#ffffff;
   font-size: 21px;
 }
+.titre{
+  color: #fcb900 !important;
+}
+
+
+
+
 /* -----------------------------------
       Navbar Section
 --------------------------------------*/
@@ -134,6 +143,37 @@ color: #fcb900 !important;
   height: 200px;
   border-radius: 5px;
 }
+.accordion-header button{
+  text-transform: uppercase;
+}
+.accordion-body p{
+  font-size: 20px;
+  font-family: 'opens-sans', 'sans-serif';
+}
+.about .btn{
+  border: 1px solid #252636;
+  font-size: 21px;
+  font-weight: 600;
+}
+.about .btn i{
+  
+  font-size: 21px;
+}
+.statistique .one,.two{
+  background-color: var(--bleue_nuit);
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+}
+.statistique span{
+  color: #fcb900;
+  font-weight: 600;
+  font-size: 21px;
+}
+.statistique .one{
+  margin-right: 20px;
+}
+
 
 
 /* -----------------------------------
@@ -309,10 +349,7 @@ color: #fcb900 !important;
       Partenaires Section
 --------------------------------------*/
 .partenaires{
-  display: grid;
-  place-items: center;
-  min-height: 40vh;
-  width: 100%;
+  margin: 100px auto;
 }
 .partenaires img{
   margin-top: 50px;
