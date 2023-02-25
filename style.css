@@ -49,7 +49,8 @@ a{
 .text {
   color: #fbae17;
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 15px;
+  font-size: 21px;
 }
 
 .bounceball {
@@ -57,8 +58,11 @@ a{
   display: inline-block;
   height: 37px;
   width: 15px;
-  &:before {
-    position: absolute;
+
+}
+
+.bounceball::before {
+  position: absolute;
     content: '';
     display: block;
     top: 0;
@@ -69,7 +73,7 @@ a{
     transform-origin: 50%;
     animation: bounce 500ms alternate infinite ease;
   }
-}
+
 
 @keyframes bounce {
   0% {
@@ -142,7 +146,7 @@ color: #fcb900 !important;
 .banner .title{
   color: #ffffff;
    font-weight: bold;
-   font-size: 36px;
+   font-size: 46px;
    text-transform: uppercase;
    font-family: 'news-gothic-bold-regular', sans-serif;
   }
@@ -150,7 +154,7 @@ color: #fcb900 !important;
   color: #fcb900;
 }
 .banner p{
-  font-size: 18px;
+  font-size: 21px;
   color: #fcfcff83;
   font-weight: 600;
 }
@@ -166,13 +170,13 @@ color: #fcb900 !important;
 .banner .btn-banner i{
   color: var(--bleue_nuit) !important;
 }
+
+
 /* -----------------------------------
       About Section
 --------------------------------------*/
 .about{
-  display: grid;
-  place-items: center;
-  min-height: 90vh;
+  margin: 100px auto;
 }
 .accordion-button{
   background-color: var(--bleue_nuit) !important;
@@ -405,6 +409,7 @@ color: #fcb900 !important;
   }
 .mix img{
   width: 100%;
+  height: 300px;
 }
 
 
@@ -416,8 +421,8 @@ color: #fcb900 !important;
 }
 .partenaires img{
   margin-top: 50px;
-  width: 100%;
-  height: 120px;
+  width: 200px;
+  height: 200px;
 
 }
 /* -----------------------------------
