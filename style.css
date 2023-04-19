@@ -100,11 +100,6 @@ a{
 
 }
 
-ul.navbar-nav.m-auto.mb-2.mb-lg-0.align-items-center.p-2 {
-  height: 100vh;
-  display: grid;
-  place-items: center;
-}
 
 .navbar{
   background-color: var(--bleue_nuit) !important;
@@ -149,9 +144,10 @@ ul.navbar-nav.m-auto.mb-2.mb-lg-0.align-items-center.p-2 {
 .banner .title{
   color: #ffffff;
    font-weight: bold;
-   font-size: 46px;
+   font-size: 34px;
    text-transform: uppercase;
    font-family: 'news-gothic-bold-regular', sans-serif;
+   max-lines: 2;
   }
 .banner .title span{
   color: #fcb900;
@@ -191,6 +187,12 @@ ul.navbar-nav.m-auto.mb-2.mb-lg-0.align-items-center.p-2 {
   text-transform: uppercase;
   color: var(--bleue_nuit);
   font-weight: 700;
+}
+
+.about .content p{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8;
 }
 
 .about .milieu{
@@ -284,11 +286,8 @@ ul.navbar-nav.m-auto.mb-2.mb-lg-0.align-items-center.p-2 {
 --------------------------------------*/
 section.res__gallery {
   padding: 20px;
-  width: 100%;
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  flex-direction: column;
+
+
   margin: 40px auto;
 }
 section.res__gallery ul {
@@ -317,14 +316,7 @@ section.res__gallery ul li.active {
   color: var(--white-color);
 }
 .product {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  -ms-user-select: None;
-  -moz-user-select: None;
-  -webkit-user-select: None;
-  user-select: None;
+
 }
 .product .itembox {
   position: relative;
@@ -427,20 +419,31 @@ a[data-fancybox] img {
 /* 
     ######### Background Attachement
 */
-.background-attachement{
-    background-image: linear-gradient(rgba(43, 43, 46, 0.52), rgba(43, 43, 46, 0.52)), url('https://images.unsplash.com/photo-1527199768775-bdabf8b32f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 55vh;
+.number_project{
+  min-height: 40vh;
+  background-color: var(--bleue_nuit);
+  color: #f9fbfe !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.background-attachement-mobile{
-  display: none;
+.number_project .content-title p{
+  font-size: 21px;
+  font-weight: bold;
 }
+
 
 @media (max-width:991px) {
   .navbar img{
     display: block;
   }
+  ul.navbar-nav.m-auto.mb-2.mb-lg-0.align-items-center.p-2 {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  
   header .header-one{
     display: none;
   }
